@@ -1,0 +1,26 @@
+<!DOCTYPTE html>
+<html lang="en">
+<title> Geocoder </title>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans+Condensed:300|Montserrat" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title"> Geocoding App </h1>
+    <h1> Find Latitudes and Longitudes for Multiple Locations </h1>
+    <h2 id="subtitle"> Instantly find coordinates for many locations at once <br> by loading a list of addresses into the Geocoding program </h2>
+    <div id="file_upload">
+      <h3>Please upload a CSV file (only .csv files are accepted at this time). <br/>The file should contain a column titled Address or Addresses</h3>
+      <form action="{{url_for('address_table')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" accept=".csv" name="file">
+        <button id="submit_button" type="submit"> Submit </button>
+      </form>
+      <div class="output">
+        {{text|safe}}
+        {% include btn ignore missing %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
