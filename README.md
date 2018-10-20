@@ -1,4 +1,4 @@
-# geocoder-app
+# Geocoding Web App
 
 A web app written using Python, HTML, CSS, Pandas, GeoPy. The user uploads a .csv file from his/her computer, then the program adds latitude and longitude to the file's datapoints. The updated data is presented both on the web page, and as a downloadable file for the user.  
 
