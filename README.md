@@ -2,7 +2,7 @@
 
 A web app that allows a user to upload a .csv file from his/her computer. The program then adds latitude and longitude to the file's datapoints. The updated data is presented both on the web page, and as a downloadable file for the user.  
 
-The app is currently being hosted on [Heroku](https://geocoderwebservice.herokuapp.com/).
+The app is no longer being hosted live.
 
 ## Built With:
 * Python
